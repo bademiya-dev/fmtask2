@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="card">
+        <div class="left">
+          <p class="h1">Get <span class="blueTxt">insights</span> that help your business grow.</p>
+          <p class="txt1">Discover the benefits of data analytics and make better decisions regarding revenue,
+            customer experience, and overall efficiency.</p>
+          <div class="count">
+            <div class="item">
+              <div class="items">
+                <h1>10k+</h1>
+                <p>COMPANIES</p>
+              </div>
+              <div class="items">
+                <h1>314</h1>
+                <p>TEMPLATES</p>
+              </div>
+              <div class="items">
+                <h1>12M</h1>
+                <p>QUERIES</p>
+              </div>
+              <br>
+              <br>
+              <br>
+            </div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          </div>
+        </div>
+        <div class="right">
+          <picture>
+            <source media="(min-width:650px)" srcset="images/image-header-desktop.jpg">
+            <source media="(min-width:375px)" srcset="images/image-header-mobile.jpg">
+            <img src="images/image-header-desktop.png" alt="Flowers" style="width:100%;">
+          </picture>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
